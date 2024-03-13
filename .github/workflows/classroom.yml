@@ -13,9 +13,6 @@ jobs:
     if: github.actor != 'github-classroom[bot]'
     steps:
     - name: Checkout code
-    - uses: actions/setup-node@v3
-      with:
-        node-version:16
       uses: actions/checkout@v4
     - name: Backend List Teachers
       id: backend-list-teachers
